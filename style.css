@@ -1,0 +1,108 @@
+body{
+    font-family: lexend deca;
+    margin: 0;
+   background-color: aliceblue;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+}
+.searchbar{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    border-width: 0px;
+    border-radius: 4px;
+    outline: none;
+    font-family: lexend deca;
+}
+.sb{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    border-width: 0px;
+    border-radius: 4px;
+    font-family: lexend deca;
+    transition: 0.2s;
+}
+.sb:hover{
+    color: azure;
+}
+form{
+    margin: 2px;
+}
+ul{
+    background-color: rgba(0, 0, 0, 0.144);
+    border-radius: 10px;
+    margin: 2px;
+    padding: 10px;
+    list-style: none;
+}
+#searchbars{
+    position: absolute; top: 8px; right: 8px;
+}
+#rib{
+    position: absolute;
+    top: 40%;
+    right: 20%;
+}
+#leb{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+a{
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+
+li{
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+}
+.toolbar{
+    background-color: black;
+    position: absolute; bottom: 0px; left: 0px;
+    width: 100vw;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.toolbar button{
+    background-color: black;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    color: aliceblue;
+    font-family: lexend deca;
+    text-transform: capitalize;
+}
+.toolbar button:hover{
+    background-color: rgb(17, 17, 17);
+}
+#links{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    gap: 10px;
+}
+#links a{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 3px solid blanchedalmond;
+    border-radius: 7px;
+    text-transform: capitalize;
+}
+#links a:hover{
+    translate: 0px -8px;
+    box-shadow: 0px 8px 0px hsl(36, 100%, 80%);
+}
