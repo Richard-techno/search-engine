@@ -118,3 +118,8 @@ hr.gap{
     min-height: 1em;
     border: none;
 }
+#notepad{
+    border: none;
+    font-family: lexend deca;
+    position: absolute; top: 0px; left: 0px;
+}
