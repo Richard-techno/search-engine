@@ -1,57 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>R-Search</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="website icon" type="png"
-    href="logo.png">
-    <script src="https://kit.fontawesome.com/8aab9aa82e.js" crossorigin="anonymous"></script>
-    <script>
-        window.onload = function() {
-            var links = document.querySelectorAll('a');
-            links.forEach(function(link) {
-                link.setAttribute('target', '_blank');
-            });
-        };
-    </script>
+    <link rel="website icon" type="svg" href="logo.svg">
 </head>
-<body>
+<body cz-shortcut-listen="true">
     <h1>R-Search</h1>
-    <img class="images" src="logo.png" alt="shiny blue hexagon with white capital letter R in the middle" width="200px">
+    <img class="images" src="logo.svg" alt="shiny blue hexagon with white capital letter R in the middle" width="200px">
     <br>
     <section id="searchbars">
-    <form action="https://www.google.com/search?tbs=sur:cl" method="get"  target="_blank" class="google">
-        <input  type="text" 
-                placeholder="Search on Google?..." 
-                class="searchbar" 
-                name="q">
-        <button type="submit" class="sb">search <i class="fa-solid fa-magnifying-glass"></i></button>
+    <form action="https://www.google.com/search?tbs=sur:cl" method="get" target="_blank" class="google">
+        <input type="text" placeholder="Search on Google?..." class="searchbar" name="q">
+        <button type="submit" class="sb">search <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
     </form>
 
-    <form action="https://www.youtube.com/results?" method="get"  target="_blank" class="youtube">
-        <input  type="text" 
-                placeholder="Search on Youtube?..." 
-                class="searchbar" 
-                name="search_query">
-        <button type="submit" class="sb">search <i class="fa-solid fa-magnifying-glass"></i></button>
+    <form action="https://www.youtube.com/results?" method="get" target="_blank" class="youtube">
+        <input type="text" placeholder="Search on Youtube?..." class="searchbar" name="search_query">
+        <button type="submit" class="sb">search <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
     </form>
 
-    <form action="https://scratch.mit.edu/search/projects?" method="get"  target="_blank" class="google">
-        <input  type="text" 
-                placeholder="Search on Scratch?..." 
-                class="searchbar" 
-                name="q">
-        <button type="submit" class="sb">search <i class="fa-solid fa-magnifying-glass"></i></button>
+    <form action="https://scratch.mit.edu/search/projects?" method="get" target="_blank" class="google">
+        <input type="text" placeholder="Search on Scratch?..." class="searchbar" name="q">
+        <button type="submit" class="sb">search <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
     </form>
 
-    <form action="https://sv.wikipedia.org/w/index.php?" method="get"  target="_blank" class="wikipedia">
-        <input  type="text" 
-                placeholder="Search on Wikipedia?..." 
-                class="searchbar" 
-                name="search">
-        <button type="submit" class="sb">search <i class="fa-solid fa-magnifying-glass"></i></button>
+    <form action="https://sv.wikipedia.org/w/index.php?" method="get" target="_blank" class="wikipedia">
+        <input type="text" placeholder="Search on Wikipedia?..." class="searchbar" name="search">
+        <button type="submit" class="sb">search <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
     </form>
 </section>
 <!--
@@ -72,53 +49,50 @@
     <li><a href="https://r74n.com/">R74n</Neal></a></li>
 </ul>
 -->
-<p id="bt">An error has occured</p>
-<form action="https://www.google.com/search?tbs=sur:cl" method="get"  target="_blank" class="google" id="main">
-    <input  type="text" 
-            placeholder="Search on Google?..." 
-            class="searchbar" 
-            name="q">
-    <button type="submit" class="sb">search <i class="fa-solid fa-magnifying-glass"></i></button>
+<p id="bt">Here to use ai?</p>
+<form action="https://www.google.com/search?tbs=sur:cl" method="get" target="_blank" class="google" id="main">
+    <input type="text" placeholder="Search on Google?..." class="searchbar" name="q">
+    <button type="submit" class="sb">search <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
 </form>
 <hr class="gap">
 <div class="grid" id="links">
-    <a href="https://www.youtube.com/">Youtube</a>
-    <a href="https://www.pixilart.com/draw?ref=home-page#">pixil art</a>
-    <a href="https://scratch.mit.edu/">scratch</a>
-    <a href="https://turbowarp.org/">turbowarp</a>
-    <a href="https://penguinmod.com/">penguinmod</a>
-    <a href="https://perchance.org/ai-photo-generator">Ai images</a>
-    <a href="https://talkai.info/sv/chat/#google_vignette">Ai chat</a>
-    <a href="https://www.remove.bg/">background removal</a>
+    <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+    <a href="https://www.pixilart.com/draw?ref=home-page#" target="_blank">pixil art</a>
+    <a href="https://scratch.mit.edu/" target="_blank">scratch</a>
+    <a href="https://turbowarp.org/" target="_blank">turbowarp</a>
+    <a href="https://penguinmod.com/" target="_blank">penguinmod</a>
+    <a href="https://perchance.org/ai-photo-generator" target="_blank">Ai images</a>
+    <a href="https://claude.talkai.info/sv/chat/" target="_blank">Ai chat</a>
+    <a href="https://www.remove.bg/" target="_blank">background removal</a>
 
-    <a href="https://mail.google.com/mail/u/0/?hl=sv#inbox">G-Mail</a>
-    <a href="https://drive.google.com/drive/home">google Drive</a>
-    <a href="https://onlinesequencer.net/">Music</a>
-    <a href="https://cryptii.com/">cryptii</a>
-    <a href="https://neal.fun/">neal.fun</a>
-    <a href="https://r74n.com/">R74n</a>
-    <a href="https://symbl.cc/en/unicode-table/#cjk-compatibility-ideographs">unicode</a>
-    <a href="https://www.wikipedia.org/">wikipedia</a>
+    <a href="https://mail.google.com/mail/u/0/?hl=sv#inbox" target="_blank">G-Mail</a>
+    <a href="https://drive.google.com/drive/home" target="_blank">google Drive</a>
+    <a href="https://onlinesequencer.net/" target="_blank">Music</a>
+    <a href="https://cryptii.com/" target="_blank">cryptii</a>
+    <a href="https://neal.fun/" target="_blank">neal.fun</a>
+    <a href="https://r74n.com/" target="_blank">R74n</a>
+    <a href="https://symbl.cc/en/unicode-table/#cjk-compatibility-ideographs" target="_blank">unicode</a>
+    <a href="https://www.wikipedia.org/" target="_blank">wikipedia</a>
 
-    <a href="https://perchance.org/minimal#edit">perchance</a>
-    <a href="https://musiclab.chromeexperiments.com/Song-Maker">musiclab</a>
-    <a href="https://translate.google.se/">googol translate</a>
-    <a href="https://scratchblocks.github.io/">S</a>
-    <a href="https://whyamistupid.com/">W</a>
-    <a href="https://example.com/">E</a>
-    <a href="https://www.google.com/search?client=firefox-b-d&q=r%C3%B6j">minesweeper</a>
-    <a href="https://www.instructables.com/">how 2</a>
+    <a href="https://perchance.org/minimal#edit" target="_blank">perchance</a>
+    <a href="https://musiclab.chromeexperiments.com/Song-Maker" target="_blank">musiclab</a>
+    <a href="https://translate.google.se/" target="_blank">googol translate</a>
+    <a href="https://scratchblocks.github.io/" target="_blank">S</a>
+    <a href="https://whyamistupid.com/" target="_blank">W</a>
+    <a href="https://example.com/" target="_blank">E</a>
+    <a href="https://www.google.com/search?client=firefox-b-d&amp;q=r%C3%B6j" target="_blank">minesweeper</a>
+    <a href="https://www.instructables.com/" target="_blank">how 2</a>
 </div>
-<textarea id="notepad" placeholder="write something..."></textarea>
+<textarea id="notepad" placeholder="write something..." style="width: 410px; height: 273px;"></textarea>
 
 <footer class="toolbar">
-    <a href="https://scratch.mit.edu/projects/editor/"><button>+ Scratch</button></a>
-    <a href="https://docs.google.com/document/create?usp=drive_web&ouid=116705525265985231037&folder=0AHEdChVSucQGUk9PVA"><button>+ document</button></a>
-    <a href="https://docs.google.com/presentation/create?usp=drive_web&ouid=116705525265985231037&folder=0AHEdChVSucQGUk9PVA"><button>+ presentation</button></a>
-    <a href="https://app.diagrams.net/"><button>flowchart</button></a>
-    <a href="https://docs.google.com/document/d/1Be-Muu_4ioZoxUkmOU4QhS0tjMRovh3jlAO1fs0SPaY/edit?tab=t.0"><button>Raito</button></a>
-    <a href="https://docs.google.com/document/d/1AMztNoTJDc6TGxf0nGPYjtAzXuX9RXfi-0j1iYCSxsc/edit?tab=t.0"><button>random thoughts</button></a>
+    <a href="https://scratch.mit.edu/projects/editor/" target="_blank"><button>+ Scratch</button></a>
+    <a href="https://docs.google.com/document/create?usp=drive_web&amp;ouid=116705525265985231037&amp;folder=0AHEdChVSucQGUk9PVA" target="_blank"><button>+ document</button></a>
+    <a href="https://docs.google.com/presentation/create?usp=drive_web&amp;ouid=116705525265985231037&amp;folder=0AHEdChVSucQGUk9PVA" target="_blank"><button>+ presentation</button></a>
+    <a href="https://app.diagrams.net/" target="_blank"><button>flowchart</button></a>
+    <a href="https://docs.google.com/document/d/1Be-Muu_4ioZoxUkmOU4QhS0tjMRovh3jlAO1fs0SPaY/edit?tab=t.0" target="_blank"><button>Raito</button></a>
+    <a href="https://docs.google.com/document/d/1AMztNoTJDc6TGxf0nGPYjtAzXuX9RXfi-0j1iYCSxsc/edit?tab=t.0" target="_blank"><button>random thoughts</button></a>
 </footer>
 <script src="script.js"></script>
-</body>
-</html>
+
+</body></html>
